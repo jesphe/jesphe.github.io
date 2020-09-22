@@ -19,3 +19,8 @@ img {
     border: 2px lemonchiffon solid;
     padding: 20px;
 }
+
+.internet {
+    background-color: bisque;
+    color: rgb(0, 0, 0)
+}
