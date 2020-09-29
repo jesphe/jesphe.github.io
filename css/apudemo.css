@@ -9,6 +9,21 @@ section {
     margin: 0;
 }
 
+#navBar #navlinks {
+    display: flex;
+    font-size: 20px;
+    justify-content: center
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+li {
+    padding: 0 20px;
+}
+
 #kalatori {
     background: lightsteelblue;
 }
