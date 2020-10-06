@@ -2,19 +2,37 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Harjoitus 2</title>    
+    <title>Harjoitus 2</title>   
+    <link rel="stylesheet" type = 'text/css' href='../css/harj2.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <h1>Oula lounaslista</h1>
-    <img src = "./kuvat/paistettulohi.jpg" alt ="lohi">
-    <img src = "./kuvat/kampela.jpg" alt ="kampela">
-    <img src = "./kuvat/kalkkunaleike.jpg" alt = "kalkkunaleike">
-    <img src = "./kuvat/poronkäristys.jpg" alt = "poronkäristys">
-    <img src = "./kuvat/paahtopaisti.jpg" alt = "paahtopaisti">
-        <h2>Lounasmenu</h2>
-    <p>     
+
+    <nav>
+        <ul id="navLinks">
+            <li class="navLi"><a href ="#header">Oula</a></li>
+            <li class="navLi"><a href = "#lounaslista">Lounaslista</a></li>
+            <li class="navLi"><a href = "#aukioloajat">Aukioloajat</a></li>
+            <li class="navLi"><a href = "#ajanvaraus">Ajanvaraus</a></li>
+            <li class="navLi"><a href = "#yhteys">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+
+    <section id="header">
+        <h1>Oula lounaslista</h1>
+        <div id="ruoat">
+            <img src = "./kuvat/paistettulohi.jpg" alt ="lohi">
+            <img src = "./kuvat/kampela.jpg" alt ="kampela">
+            <img src = "./kuvat/kalkkunaleike.jpg" alt = "kalkkunaleike">
+            <img src = "./kuvat/poronkäristys.jpg" alt = "poronkäristys">
+            <img src = "./kuvat/paahtopaisti.jpg" alt = "paahtopaisti">
+        </div>
+    </section>
+    <section id="lounaslista">
+        <div id="lounasmenu">
+            <h2>Lounasmenu</h2>
+            <p>     
             Maanantai<br><br>
 
             Juusto-vihanneskeittoa ja kokin sämpylä<br>
@@ -25,6 +43,7 @@
             Tiistai<br><br>
             
             Kana-fetajustosalaattia ja kokin sämpylä<br>
+            Paistettua punakampelaa, pinaattikastiketta ja perunamuusia<br>
             Paistettua punakampelaa, pinaattikastiketta ja perunamuusia<br>
             Pannukakkua, mansikkahilloa ja kermavaahtoa<br>
             
@@ -51,57 +70,83 @@
 
             <br>
             Lounaan hinta on 11 &euro;, joka sisältää ruokajuoman - vesi, kotikalja, maito
-    </p>
-    
-    <h2>Aukioloajat</h2>
-    <table>
-        <tr>
-            <th>Päivä</th>
-            <th>Kellonaika</th>
-            <th>á la carte -lista</th>
-        </tr>
-        <tr>
-            <td>ma</td>
-            <td>10:30-15:00</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>ti</td>
-            <td>10:30-15:00</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>ke</td>
-            <td>10:30-15:00</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>to</td>
-            <td>10:30-15:00</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>pe</td>
-            <td>10:30-15:00</td>
-            <td>á la carte -lista 17:00-21:00</td>
-        </tr>
-        <tr>
-            <td>la</td>
-            <td>11:00-15:00</td>
-            <td>á la carte -lista 17:00-21:00</td>
-        </tr>
-    </table>
-
+            </p>
+        </div>
+    </section>
+    <section id="aukioloajat">
+        <h2>Aukioloajat</h2>
+        <table>
+            <tr>
+                <th>Päivä</th>
+                <th>Kellonaika</th>
+                <th>á la carte -lista</th>
+            </tr>
+            <tr>
+                <td>ma</td>
+                <td>10:30-15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ti</td>
+                <td>10:30-15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ke</td>
+                <td>10:30-15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>to</td>
+                <td>10:30-15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>pe</td>
+                <td>10:30-15:00</td>
+                <td>á la carte -lista 17:00-21:00</td>
+            </tr>
+            <tr>
+                <td>la</td>
+                <td>11:00-15:00</td>
+                <td>á la carte -lista 17:00-21:00</td>
+            </tr>
+        </table>
+    </section>
+    <section id="ajanvaraus">
+        <h2>Ajanvaraus</h2>
+        <form id="poytavaraus">
+            <label>Nimi</label>
+            <input type="text" placeholder="Nimi">
+            <label>Puhelin</label>
+            <input type="text" placeholder="Puhelinnumero">
+            <label>Sähköposti</label>
+            <input type="text" placeholder="Sähköposti">
+            <label>Varauksen päivämäärä</label>
+            <input type="date">
+            <label>Varauksen kellonaika</label>
+            <input type="time">
+            <label>Erikoistoivomukset</label>
+            <input type="text" placeholder="Erikoistoivomukset">
+            <label>Lähetä tiedot</label>
+            <input type="submit" value="Lähetä">
+        </form>
+    </section>
+    <section id="yhteys">
     <h2>Yhteystiedot</h2>
-    <address>
-        Ravintola Oula<br>
-        Hallituskatu 12<br>
-        96200 ROVANIEMI<br>
-        <br>
-        Puh. (016) 555 4755<br>
-        Fax (016) 555 4756<br>
-        E-Mail: ravintola.oula@oulanet.fi<br>
-    </address>
+        <div id="yhteystiedot">
+            <address>
+                Ravintola Oula<br>
+                Hallituskatu 12<br>
+                96200 ROVANIEMI<br>
+                <br>
+                Puh. (016) 555 4755<br>
+                Fax (016) 555 4756<br>
+                E-Mail: ravintola.oula@oulanet.fi<br>
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1125.0903562935173!2d25.723007939672872!3d66.49715467307489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4bed11188d49%3A0x1657bd88c2a942ae!2sHallituskatu%2012%2C%2096100%20Rovaniemi!5e0!3m2!1sfi!2sfi!4v1601962756732!5m2!1sfi!2sfi" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
 </body>
 
 </html>

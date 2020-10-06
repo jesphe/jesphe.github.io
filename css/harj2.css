@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: black 3px 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#yhteystiedot {
+    display: flex;
+
+}
+
+label {
+    display: block;
+}
+
+section {
+    height: 100vh;
+    padding: 30px 20px 60px 60px;
+}
+
+#header {
+    background-image: url('../harj/kuvat/oula.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#ruoat {
+    display: flex;
+    justify-content: center;    
+}
+
+#lounasmenu {
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid 3px black;
+    border-radius: 20%;
+    width: 50em;
+    padding: 10px 5px;
+}
+
+
+
+
+
+
+nav {
+    font-size: 20pt;
+}
+
+#navLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #456d;
+    overflow: hidden; 
+}
+  
+#navLinks {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.navLi a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navLi a:hover {
+    color: #add8e6;
+    transition: 500ms ease;
+}
