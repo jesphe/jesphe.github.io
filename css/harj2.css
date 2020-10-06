@@ -2,7 +2,19 @@
     padding: 0;
     margin: 0;
     font-family: 'Inconsolata', monospace;
-    font-size: 20px
+    font-size: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
 }
 
 h1 {
@@ -42,16 +54,27 @@ section {
     justify-content: center;    
 }
 
-#lounasmenu {
+#lounaslista {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#lounasmenu p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: whitesmoke;
-    border: solid 3px black;
-    border-radius: 20%;
-    width: 50em;
+    width: 45em;
+    border-radius: 10%;
+    border: dotted black 2px;
     padding: 10px 5px;
 }
 
-
+#lounasmenu {
+    display: flex;
+    justify-content: center;
+}
 
 
 
