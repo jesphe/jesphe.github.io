@@ -43,6 +43,7 @@ section {
 }
 
 #lounasmenu {
+    margin: auto;
     text-align: center;
     background-color: whitesmoke;
     border: solid 3px black;
@@ -51,7 +52,26 @@ section {
     padding: 10px 5px;
 }
 
+h2 {
+    text-align: center;
+    padding-bottom: 20px;   
+}
 
+table,
+th, 
+td, 
+tr {
+    padding: 2px 10px;
+    margin: auto;
+}
+
+table {
+    border-bottom: solid black 0.5px;
+}
+
+th {
+    font-size: 25px;
+}
 
 
 
