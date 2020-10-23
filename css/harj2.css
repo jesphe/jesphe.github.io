@@ -1,8 +1,13 @@
+:root {
+    font-size: 20px;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
+    text-align: center
 }
 
 body::-webkit-scrollbar {
@@ -54,26 +59,23 @@ section {
     justify-content: center;    
 }
 
-
 #lounasmenu {
     margin: auto;
-}
-
-#lounasmenu p {
-    display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: whitesmoke;
     width: 45em;
     border-radius: 10%;
-    border: dotted black 2px;
+    border: solid black 3px;
     padding: 10px 5px;
 }
 
 h2 {
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 20px;   
+    position: relative;
+    top: 10%;
 }
 
 table,
@@ -81,17 +83,65 @@ th,
 td, 
 tr {
     padding: 2px 10px;
-    margin: auto;
 }
 
 table {
-    border-bottom: solid black 0.5px;
+    border-bottom: solid black 2px;
+    margin: auto;
+    position: relative;
+    top: 20%;
 }
 
 th {
     font-size: 25px;
 }
 
+#poytavaraus {
+    position: relative;
+    top: 20%;
+    display: inline-block;
+}
+
+label {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px; 
+}
+
+input {
+    width: 100%;
+    padding: 5px 5px;
+    text-align: left;
+}
+
+
+input:focus {
+    background-color: #bfe7f5;
+}
+
+input[type=submit]:focus {
+    background-color: rgb(118, 240, 118);
+}
+
+input::placeholder {
+    text-align: left
+}
+
+#yhteystiedot {
+    position: relative;
+    top: 20%;
+    display: inline-block;
+}
+
+address {
+    border-bottom: solid 2px black;
+    padding-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+iframe {
+    padding-top: 20px;
+}
 
 
 
