@@ -35,13 +35,15 @@ footer {
 }
 
 .container,
-.content {
+.content,
+.cont {
     display: flex;
     flex-direction: column;
 }
 
 @media all and (min-width: 1068px) {
-    .content {
+    .content,
+    .cont {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -52,18 +54,26 @@ footer {
     }
 
     article {
-        flex: 7;
-        order: 1;
+        flex: 3;
+        order: 2;
         min-height: 80vh;
     }
 
     aside {
-        flex: 2;
-        order: 4;
+        flex: 0.5;
+        order: 0;
     }
 
     footer {
         order:5
+    }
+
+    .cont {
+        flex: 2;
+    }
+
+    .cont figure {
+        flex: 1.5;
     }
 
     figure {
@@ -73,11 +83,10 @@ footer {
 }
 
 @media all and (max-width: 1068px){
-    .content {
+    .cont {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
 
     article {
         min-height: 80vh;
@@ -86,6 +95,30 @@ footer {
 
     figure {
         flex: 0.5;
+        order: 1;
     }
 
+    aside {
+        order: 2;
+    }
+}
+
+@media all and (max-width: 768px) {
+    figure {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media all and (max-width: 568px) {
+    footer {
+        display: none;
+    }
+
+    article {
+        min-height: 85vh;
+    }
 }
