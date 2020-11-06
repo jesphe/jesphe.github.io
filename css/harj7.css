@@ -1,0 +1,26 @@
+* { 
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#navLinks {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    background-color: #3a405a;
+    justify-content: flex-end;
+}
+
+.navLi a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #f9dec9;
+}
+
+.navLi {
+    padding: 16px 20px;
+}
