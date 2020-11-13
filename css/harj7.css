@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #3a405a;
+    --secondary-color: #f9dec9;
+    --third-color: #99b2dd;
+}
+
 * { 
     padding: 0;    
     margin: 0;
@@ -5,22 +11,54 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 #navLinks {
     display: flex;
     list-style: none;
     text-decoration: none;
-    background-color: #3a405a;
+    background-color: var(--primary-color);
     justify-content: flex-end;
 }
 
 .navLi a {
     padding: 20px 20px;
     text-decoration: none;
-    color: #f9dec9;
+    color: var(--secondary-color);
 }
 
 .navLi {
-    padding: 16px 20px;
+    padding: 16px 25px 20px 0px;
 }
+
+section {
+    height: 100vh;
+}
+
+#index {
+    /* The image used */
+    background-image: url("../harj/kuvat/perhonenkirjalla.jpg");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
