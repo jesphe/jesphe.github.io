@@ -8,30 +8,93 @@
 <body>
     <nav>
         <ul id="navLinks">
-            <li class="navLi"><a href ="#">Tietoja</a></li>
-            <li class="navLi"><a href = "#">Yhteystiedot</a></li>
-            <li class="navLi"><a href = "#">Kirjaudu</a><img src="./kuvat/lukko.png" style="height: 20px; position: relative; right: 20;"></li>
+            <div class="dropdown">
+                <button class="dropbtn">Tietoja 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">  
+                  <div class="row">
+                    <div class="column">
+                      <a href="#">Tutustu ></a>
+                      <a href="#">Varainhankinta ></a>
+                      <a href="#">Töihin ></a>
+                      <a href="#">Tietosuoja >
+                          <br><p style="color: white; font-size: 15px;">Tietosuoja on meille tärkeä ja
+                          haluammekin osoittaa, miten ja
+                          minkälaisten tehtävien hoitamiseksi
+                          henkilötietoja käsittelemme.</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a href="#">Laatu  >
+                          <br><p style="color: white; font-size: 15px;">Tervetuloa tutustumaan meidän laatuun. Näillä
+                            sivuilla kerromme, kuinka me vastaamme
+                            toimintansa laadusta eurooppalaisen
+                            korkeakoulutusalueen periaatteiden mukaisesti.</p>
+                      </a>
+                      <a href="#">Kansaivälisyys >
+                          <br><p style="color: white; font-size: 15px;">
+                            Kansainvälisty kanssamme! Hyödynnä
+                            laajaa kansainvälistä verkostoamme sekä
+                            osaamistamme kilpailukykysi
+                            kehittäjänä.</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            <li class="navLi"><a href="#">Yhteystiedot</a></li>
+            <li class="navLi"><a href="#">Kirjaudu</a><img src="./kuvat/lukko.png" style="height: 20px; position: relative; right: 20;"></li>
+            <li class="lang"><a href="#">FI |</a></li>
+            <li class="lang"><a href="#">SE |</a></li>
+            <li class="lang"><a href="#">EN </a></li>
         </ul>
     </nav>
     <section id="index">  
+        <div id="indexContent">
+            <img src="./kuvat/Logo-1.svg" style="width: 350px;">
+            <div id="indexHeading">
+                <p>Palvelut</p>
+                <p>Tutkimus ja kehitus</p>
+            </div>
+        </div>
+        <div id="indexFooter">
+            <h2>Hanki soiva tulevaisuus koulustamme</h2>
+            <p>Kellot soi, vai soiko? koulu on kansainvälisesti tunnustettu oppimisen uudistaja ja <br>
+                kilpailukyvyn kehittäjä. Teemme aktiivista yhteistyötä työelämän kanssa ja toimimme <br>
+                laajassa kansainvälisessä verkostossa. Opiskelijoita meillä on 3500 ja henkilöstöä noin 320. </p>
+        </div>
     </section>
-    <div class="centereder">
-        <section id="cards">
-            <div id="containerCards">
-                <article class="card">
-                    <h3>Lokakuun yhteishaku</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero nunc, imperdiet sed malesuada quis, ullamcorper non tortor. Mauris hendrerit convallis convallis. </p>
-                </article><!-- /card-one -->
+    <section id="cards">
 
-                <article class="card">
-                    <p>content for card two</p>
-                </article><!-- /card-two -->
+    </section>
 
-                <article class="card">  
-                <p>content for card three</p>
-                </article><!-- /card-three -->
-        </section>
-    </div>
-    
+    <footer>
+        <div class="footerRow">
+            <div class="footerColumn">
+                Opiskelijalle <br><br>
+                Tietoa meistä <br><br>
+                Yhteys- ja laskutustiedot
+            </div>
+            <div class="footerColumn">
+                Töihin meille <br><br>
+                Tietosuojapolitiikka <br><br>
+                Blogi
+            </div>
+            <div class="footerColumn">
+                Wilma <br><br>
+                Henkilöstön intra <br><br>
+                Markkinointi ja viestintä
+            </div>
+        </div>
+        <div class="somet">
+            <img src="./kuvat/facebook.png" style="width: 3%;">
+            <img src="./kuvat/instagram.png" style="width: 3%;">
+            <img src="./kuvat/snapchat.png" style="width: 3%;">
+            <img src="./kuvat/linkedin.png" style="width: 3%;">
+            <img src="./kuvat/twitter.png" style="width: 3%;">
+            <img src="./kuvat/youtube.png" style="width: 5%; position: relative; top: 27px;">
+        </div>
+    </footer>
 </body>
 </html>

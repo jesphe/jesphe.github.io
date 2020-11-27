@@ -20,6 +20,7 @@
 }
 
 .navLi a {
+    font-size: 20px;
     padding: 20px 20px;
     text-decoration: none;
     color: var(--secondary-color);
@@ -34,13 +35,21 @@
     text-decoration: underline;
 }
 
-section {
-    height: 50%;
+.lang a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--secondary-color);
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.lang {
+    padding: 16px 0 0 0;
 }
 
 #index {
     /* The image used */
-    background-image: url("../harj/kuvat/perhonenkirjalla.jpg");
+    background: linear-gradient(rgba(255,255,255,-0.5), rgba(255,255,255,-0.5)), url("../harj/kuvat/perhonenkirjalla.jpg");
 
     /* Full height */
     height: 100%;
@@ -49,16 +58,133 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(50%);
+    opacity: 90%;
 }
 
-.cards {
+/* Megamenu */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: var(--primary-color);
+    font: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn {
+    color: var(--secondary-color);
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 35%;
+    height: 30%;
+    left: 750px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    background-color: var(--primary-color);
+    height: 250px;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
+}
+
+.column a {
+    float: none;
+    color: var(--secondary-color);
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+
+
+#indexContent {
+    padding: 50px 80px;
+}
+
+#indexHeading {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: white;
+    font-size: 40px;
 }
 
-.card {
-    flex: 0 1 24%;
+#indexHeading p {
+    padding: 30px;
+    position: relative;
+    bottom: 100px;
+    font-weight: bold;
 }
 
+#indexFooter {
+    background: rgba(58, 64, 90, 0.9); 
+    width: 100%;
+    color: white;
+    padding: 30px 100px;
+    position: absolute;
+    bottom: -63;
+    height: 250px;
+}
+
+#indexFooter h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#indexFooter p {
+    font-size: 25px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    height: 400px;
+}
+
+.footerColumn {
+    color: var(--secondary-color);
+    float: left;
+    width: 33.33%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-size: 18px;
+}
+
+/* Clear floats after the columns */
+.footerRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.somet img {
+    
+}
