@@ -175,7 +175,6 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
-    font-size: 18px;
 }
 
 /* Clear floats after the columns */
@@ -183,8 +182,4 @@ footer {
     content: "";
     display: table;
     clear: both;
-}
-
-.somet img {
-    
 }
