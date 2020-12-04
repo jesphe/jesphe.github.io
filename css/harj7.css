@@ -47,6 +47,10 @@
     padding: 16px 0 0 0;
 }
 
+.lang a:hover {
+    text-decoration: underline;
+}
+
 #index {
     /* The image used */
     background: linear-gradient(rgba(255,255,255,-0.5), rgba(255,255,255,-0.5)), url("../harj/kuvat/perhonenkirjalla.jpg");
@@ -91,7 +95,7 @@
     background-color: var(--primary-color);
     width: 35%;
     height: 30%;
-    left: 750px;
+    right: 450px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -100,7 +104,6 @@
     display: block; 
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
@@ -165,7 +168,7 @@
 
 footer {
     background-color: var(--primary-color);
-    height: 400px;
+    height: 480px;
 }
 
 .footerColumn {
@@ -175,6 +178,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
+    font-size: 20px;
 }
 
 /* Clear floats after the columns */
@@ -182,4 +186,153 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    color: var(--primary-color);
+}
+
+.card {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 2%;   
+}
+
+.card h2 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+hr {
+    border: solid rgb(230, 229, 228) 2px;
+}
+
+.ipsum {
+    padding: 100px 120px;
+    color: var(--primary-color);
+}
+
+.lueLisaa {
+    color: var(--primary-color);
+    background-color: #ffffff;
+    font-size: 20px;
+    border: solid var(--primary-color) 2px;
+    padding: 10px 150px;
+    border-radius: 2%;
+}
+
+.paperwork1 {
+    width: 1650px;
+    padding: 20px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.paperwork1 img {
+    margin-right: 70px;
+    float: left;
+}
+
+.paperwork1 h2,
+.paperwork1 p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+.paperwork1 h2 {
+    padding-bottom: 20px;
+    font-size: 37px;
+    font-weight: 450;
+}
+
+.paperwork1 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.paperwork1 span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.paperwork2 {
+    width: 1700px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.paperwork2 img {
+    margin-right: 70px;
+    padding-left: 20px;
+    float: right;
+}
+
+.paperwork2 h2,
+.paperwork2 p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+.paperwork2 h2 {
+    padding-bottom: 20px;
+    font-size: 37px;
+    font-weight: 450;
+}
+
+.paperwork2 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.paperwork2 span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.somet img {
+    position: relative;
+    left: 800px;
+    cursor: pointer;
+}
+
+#yhteys {
+    display: inline-flex;
+    color: white;
+    position: relative;
+    left: 700px;
+    padding-top: 40px;
+}
+
+#yhteysParagraph {
+    padding-left: 10px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#copyright {
+    color: white;
+    position: absolute;
+    left: 830px;
+}
+button:hover {
+    background-color: whitesmoke;
 }
