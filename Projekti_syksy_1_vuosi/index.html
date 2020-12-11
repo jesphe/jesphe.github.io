@@ -17,10 +17,11 @@
         <nav>
           <h3>Wild Packrafting</h3>
           <ul>
-            <li><a href="#trips">Retket</a></li>
-            <li><a href="#form">Matkavaraus</a></li>
-            <li><a href="#image-gallery">Kuvagalleria</a></li>
-            <li><a href="#map">Kartta</a></li>
+            <li class="navLinks"><a href="#trips">Retket</a></li>
+            <li class="navLinks"><a href="#form">Matkavaraus</a></li>
+            <li class="navLinks"><a href="#image-gallery">Kuvagalleria</a></li>
+            <li class="navLinks"><a href="#map">Kartta</a></li>
+            <li><a href="javascript:void(0)" id="hamburger">&#9776;</a></li>
           </ul>
         </nav>
       </header>
@@ -130,7 +131,7 @@
           <h2>Varaa matka</h2>
           <div class="form-container">
             <form>
-              <legend>Retkityyppi</legend>
+              <span>Retkityyppi</span>
               <input
                 type="radio"
                 name="retki"
@@ -162,13 +163,13 @@
                 >Vätsärin erämaaseikkailu (10 päivää, 200 km) </label
               ><br />
 
-              <legend>Alkamispäivä</legend>
+              <span>Alkamispäivä</span>
               <input type="date" id="date" name="date" required />
 
-              <legend>Osallistujien määrä</legend>
+              <span>Osallistujien määrä</span>
               <input type="number" id="osallistujat" required />
 
-              <legend>Sähköposti</legend>
+              <span>Sähköposti</span>
               <input
                 type="email"
                 placeholder="Sähköposti"
@@ -177,7 +178,7 @@
                 required
               />
 
-              <legend>Puhelinnumero</legend>
+              <span>Puhelinnumero</span>
               <input
                 type="number"
                 id="puhnro"
@@ -185,12 +186,8 @@
                 required
               /><br /><br />
               <div class="submit-clear">
-                <input
-                  type="reset"
-                  placeholder="Tyhjennä kentät"
-                  value="Tyhjennä kentät"
-                />
-                <input type="submit" placeholder="Varaa matka" />
+                <input type="reset" value="Tyhjennä kentät" />
+                <input type="submit" />
               </div>
             </form>
           </div>

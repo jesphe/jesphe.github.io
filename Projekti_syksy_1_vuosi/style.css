@@ -105,12 +105,17 @@ nav li {
   color: #ffff;
 }
 
+nav a #hamburger,
+nav li:last-child {
+  display: none;
+}
+
 nav h3 {
   font-family: PopBold;
   font-size: 2rem;
 }
 
-nav a:hover {
+nav li a:hover {
   color: var(--secondary-color);
   animation: dot 0.5s ease-in-out infinite alternate;
 }
@@ -209,7 +214,8 @@ nav h3:hover {
   text-align: center;
 }
 
-legend {
+form span {
+  display: block;
   font-family: PopRegular;
   font-size: 2rem;
   padding: 20px 0;
@@ -293,4 +299,9 @@ footer span {
   vertical-align: middle;
   text-align: center;
   line-height: normal;
+}
+
+/* Ipad responsive */
+
+@media all and (max-width: 768px) {
 }
