@@ -174,28 +174,6 @@
   font-size: 25px;
 }
 
-footer {
-  background-color: var(--primary-color);
-  height: 480px;
-}
-
-.footerColumn {
-  color: var(--secondary-color);
-  float: left;
-  width: 33.33%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
-  font-size: 20px;
-}
-
-/* Clear floats after the columns */
-.footerRow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 #cards {
   display: flex;
   justify-content: space-around;
@@ -344,6 +322,27 @@ button:hover {
   background-color: whitesmoke;
 }
 
+footer {
+  background-color: var(--primary-color);
+  height: 480px;
+}
+
+.footerColumn {
+  color: var(--secondary-color);
+  float: left;
+  width: 33.33%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+/* Clear floats after the columns */
+.footerRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Small screens */
 
 @media all and (max-width: 768px) {
@@ -407,9 +406,81 @@ button:hover {
 
   #cards {
     display: block;
+    margin-bottom: -300px;
   }
 
   .card {
-    border: none;
+    width: 456px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  /* Ipsum page */
+
+  .paperwork1,
+  .paperwork2 {
+    width: 768px;
+  }
+
+  .paperwork1 img,
+  .paperwork2 img {
+    width: 456px;
+    float: none;
+  }
+
+  .paperwork1 h2,
+  .paperwork2 h2 {
+    overflow: hidden;
+    font-size: 30px;
+    float: none;
+    width: 456px;
+  }
+
+  .paperwork1 p,
+  .paperwork2 p {
+    width: 456px;
+    float: none;
+  }
+
+  .paperwork2 p,
+  .paperwork2 h2,
+  .paperwork2 span {
+    position: relative;
+    left: 20px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 70%;
+  }
+  .footerColumn {
+    flex-direction: column;
+    float: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  .somet {
+    position: relative;
+    right: 500px;
+  }
+
+  #yhteys {
+    position: relative;
+    left: 100;
+    display: block;
+  }
+
+  #yhteysParagraph {
+    position: absolute;
+    left: 150;
+  }
+
+  #copyright {
+    position: relative;
+    left: 200;
+    top: 60;
   }
 }
