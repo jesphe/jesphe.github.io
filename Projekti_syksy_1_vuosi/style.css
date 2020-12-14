@@ -300,9 +300,6 @@ input[type="date"]:focus {
   left: 340px;
 }
 
-.lodging img:nth-child(3) {
-}
-
 .lodging img:nth-child(1):hover,
 .lodging img:nth-child(2):hover,
 .lodging img:nth-child(3):hover {
