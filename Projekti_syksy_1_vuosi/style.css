@@ -271,11 +271,51 @@ input[type="date"]:focus {
   height: 90vh;
 }
 
-#map img {
+#map-layout {
   display: block;
   margin: auto;
   border: 1px white solid;
   width: 50%;
+}
+
+.lodging img {
+  width: 50px;
+}
+
+.lodging img:nth-child(1) {
+  position: relative;
+  top: -300px;
+  left: 880px;
+}
+
+.lodging img:nth-child(2) {
+  position: relative;
+  top: -500px;
+  left: 480px;
+}
+
+.lodging img:nth-child(3) {
+  position: relative;
+  top: -190px;
+  left: 340px;
+}
+
+.lodging img:nth-child(3) {
+}
+
+.lodging img:nth-child(1):hover,
+.lodging img:nth-child(2):hover,
+.lodging img:nth-child(3):hover {
+  transition: transform 1.5s;
+  transform: scale(6);
+}
+
+#raft img {
+  position: relative;
+  top: 550px;
+  left: 1080px;
+  transform: rotate(63deg);
+  width: 70px;
 }
 
 /* Footer */
