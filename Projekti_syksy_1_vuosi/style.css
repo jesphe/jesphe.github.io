@@ -335,4 +335,7 @@ footer span {
 /* Ipad responsive view */
 
 @media all and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
 }
