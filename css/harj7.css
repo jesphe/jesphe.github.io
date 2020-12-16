@@ -130,6 +130,19 @@
   text-align: left;
 }
 
+#tietoja,
+#laatu,
+#kansainvalisyys,
+#yhteystiedot,
+#kirjaudu,
+#kieli,
+#suomi,
+#svenska,
+#english,
+nav hr {
+  display: none;
+}
+
 /* Clear floats after the columns */
 
 #indexContent {
@@ -360,6 +373,52 @@ footer {
     display: none;
   }
 
+  .dropdown-content p {
+    display: none;
+  }
+
+  /* Dropdown */
+
+  .dropdown-content {
+    width: 100%;
+    position: absolute;
+    right: -0px;
+    height: 55vh;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  #tietoja,
+  #laatu,
+  #kansainvalisyys,
+  #yhteystiedot,
+  #kieli,
+  #suomi,
+  #svenska,
+  #english {
+    display: block;
+  }
+
+  .column:nth-child(2) {
+    display: none;
+  }
+
+  .column a:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  #yhteystiedot,
+  #kieli,
+  #kirjaudu {
+    margin-left: 0;
+  }
+
+  nav hr {
+    display: block;
+    border: solid var(--secondary-color) 0.5px;
+  }
   /*  */
 
   section {
@@ -407,6 +466,7 @@ footer {
   #cards {
     display: block;
     margin-bottom: -300px;
+    width: 768px;
   }
 
   .card {
@@ -420,7 +480,8 @@ footer {
 
   .paperwork1,
   .paperwork2 {
-    width: 768px;
+    width: 650px;
+    overflow: hidden;
   }
 
   .paperwork1 img,
