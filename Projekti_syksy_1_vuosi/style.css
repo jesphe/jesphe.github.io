@@ -1,0 +1,340 @@
+:root {
+  font-size: 16px;
+  --secondary-color: #00b4d8;
+  --primarybg-color: #caf0f8;
+  --secondarybg-color: #90e0ef;
+  --highlight-color: #e9fbff;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PopRegular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PopBold;
+  src: url(./fonts/Poppins-Bold.ttf);
+}
+
+/* HTML presets  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primarybg-color);
+}
+
+section {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(68, 68, 68);
+}
+
+hr {
+  border: none;
+  border-top: 3px solid var(--secondarybg-color);
+  overflow: visible;
+  margin: auto;
+  height: 5px;
+  width: 75%;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+#trips h2,
+#form h2,
+#image-gallery h2,
+#map h2 {
+  font-family: PopRegular;
+  font-size: 2.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+/* Hides form number buttons */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Navbar */
+nav {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  color: #ffff;
+}
+
+nav a,
+nav ul,
+nav li {
+  font-family: PopLight;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  display: flex;
+  padding: 0 10px;
+  margin-left: auto;
+  color: #ffff;
+}
+
+nav h3 {
+  font-family: PopBold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  color: var(--secondary-color);
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+nav h3:hover {
+  animation: heading 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes heading {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Main Page */
+
+#mainPage {
+  height: 90vh;
+}
+
+#mainPage h1 {
+  font-family: PopBold;
+  font-size: 3.5rem;
+  letter-spacing: 15px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 2px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+#mainPage h2 {
+  font-family: PopRegular;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding-bottom: 100px;
+}
+
+#mainPage p {
+  font-family: PopLight;
+  font-size: 1rem;
+  width: 33.33%;
+  padding-top: 20px;
+}
+
+#mainPage p:last-child {
+  padding-bottom: 30px;
+}
+
+.logo {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  height: 600px;
+  filter: drop-shadow(0 0 0.75rem rgba(21, 73, 255, 0.35));
+}
+
+/* Trips page */
+
+#trips h3 {
+  font-family: PopRegular;
+  font-size: 2rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#trips p {
+  font-family: PopLight;
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
+
+#trips p:last-child {
+  padding-bottom: 30px;
+}
+/* Form page */
+
+#form {
+  height: 100vh;
+}
+
+.form-container {
+  text-align: center;
+}
+
+form span {
+  display: block;
+  font-family: PopRegular;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+form label {
+  font-family: PopLight;
+  font-size: 1.1rem;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  padding: 5px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  background-color: var(--highlight-color);
+}
+
+.submit-clear input {
+  padding: 3px;
+  font-family: PopLight;
+  font-size: 1.1rem;
+  border: solid 1px white;
+}
+
+.submit-clear input:hover {
+  background-color: azure;
+}
+
+/* Image-gallery */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 3.5px;
+}
+
+.column img {
+  padding: 3.5px 0;
+  vertical-align: middle;
+  width: 100%;
+  height: 20%;
+}
+
+/* Map */
+
+#map {
+  height: 90vh;
+}
+
+#map-layout {
+  display: block;
+  margin: auto;
+  border: 1px white solid;
+  width: 50%;
+}
+
+.lodging img {
+  width: 50px;
+}
+
+.lodging img:nth-child(1) {
+  position: relative;
+  top: -300px;
+  left: 880px;
+}
+
+.lodging img:nth-child(2) {
+  position: relative;
+  top: -500px;
+  left: 480px;
+}
+
+.lodging img:nth-child(3) {
+  position: relative;
+  top: -190px;
+  left: 340px;
+}
+
+.lodging img:nth-child(1):hover,
+.lodging img:nth-child(2):hover,
+.lodging img:nth-child(3):hover {
+  transition: transform 1.5s;
+  transform: scale(6);
+}
+
+#raft img {
+  position: relative;
+  top: 550px;
+  left: 1080px;
+  transform: rotate(63deg);
+  width: 70px;
+}
+
+/* Footer */
+
+footer {
+  font-family: PopLight;
+  height: 10vh;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  text-align: center;
+  line-height: 97.9px;
+}
+
+footer span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* Ipad responsive view */
+
+@media all and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}

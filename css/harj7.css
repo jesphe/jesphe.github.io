@@ -1,338 +1,547 @@
 :root {
-    --primary-color: #3a405a;
-    --secondary-color: #f9dec9;
-    --third-color: #99b2dd;
+  --primary-color: #3a405a;
+  --secondary-color: #f9dec9;
+  --third-color: #99b2dd;
 }
 
-* { 
-    padding: 0;    
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #navLinks {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    justify-content: flex-end;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  justify-content: flex-end;
 }
 
 .navLi a {
-    font-size: 20px;
-    padding: 20px 20px;
-    text-decoration: none;
-    color: var(--secondary-color);
+  font-size: 20px;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .navLi {
-    padding: 16px 25px  20px 0px;
-    color: var(--secondary-color);
+  padding: 16px 25px 20px 0px;
+  color: var(--secondary-color);
 }
 
 .navLi a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .lang a {
-    text-decoration: none;
-    list-style: none;
-    color: var(--secondary-color);
-    padding: 0 10px;
-    font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-color);
+  padding: 0 10px;
+  font-size: 20px;
 }
 
 .lang {
-    padding: 16px 0 0 0;
+  padding: 16px 0 0 0;
 }
 
 .lang a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #index {
-    /* The image used */
-    background: linear-gradient(rgba(255,255,255,-0.5), rgba(255,255,255,-0.5)), url("../harj/kuvat/perhonenkirjalla.jpg");
+  /* The image used */
+  background: linear-gradient(
+      rgba(255, 255, 255, -0.5),
+      rgba(255, 255, 255, -0.5)
+    ),
+    url("../harj/kuvat/perhonenkirjalla.jpg");
 
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 90%;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
 }
 
 /* Megamenu */
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: var(--primary-color);
-    font: inherit;
-    margin: 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: var(--primary-color);
+  font: inherit;
+  margin: 0;
 }
 
 .dropdown .dropbtn {
-    color: var(--secondary-color);
-    font-size: 20px;
-    position: relative;
-    top: 2px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  position: relative;
+  top: 2px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--primary-color);
-    width: 35%;
-    height: 30%;
-    right: 450px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 35%;
+  height: 30%;
+  right: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; 
+  display: block;
 }
 
 .column {
-    float: left;
-    width: 50%;
-    padding: 0 20px;
-    background-color: var(--primary-color);
-    height: 250px;
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  height: 250px;
 }
 
 .dropbtn:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .column a {
-    float: none;
-    color: var(--secondary-color);
-    font-size: 16px;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: var(--secondary-color);
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#tietoja,
+#laatu,
+#kansainvalisyys,
+#yhteystiedot,
+#kirjaudu,
+#kieli,
+#suomi,
+#svenska,
+#english,
+nav hr {
+  display: none;
 }
 
 /* Clear floats after the columns */
 
-
 #indexContent {
-    padding: 50px 80px;
+  padding: 50px 80px;
+}
+
+#indexContent img {
+  width: 350px;
+  cursor: pointer;
 }
 
 #indexHeading {
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 40px;
 }
 
 #indexHeading p {
-    padding: 30px;
-    position: relative;
-    bottom: 100px;
-    font-weight: bold;
+  padding: 30px;
+  position: relative;
+  bottom: 100px;
+  font-weight: bold;
 }
 
 #indexFooter {
-    background: rgba(58, 64, 90, 0.9); 
-    width: 100%;
-    color: white;
-    padding: 30px 100px;
-    position: absolute;
-    bottom: -63;
-    height: 250px;
+  background: rgba(58, 64, 90, 0.7);
+  width: 100%;
+  color: white;
+  padding: 30px 100px;
+  position: absolute;
+  bottom: -63;
+  height: 250px;
 }
 
 #indexFooter h2 {
-    font-size: 50px;
-    font-weight: 400;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 #indexFooter p {
-    font-size: 25px;
+  font-size: 25px;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: var(--primary-color);
+}
+
+.card {
+  text-align: center;
+  border: solid black 1px;
+  border-radius: 2%;
+}
+
+.card h2 {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+hr {
+  border: solid rgb(230, 229, 228) 2px;
+}
+
+.ipsum {
+  padding: 100px 120px;
+  color: var(--primary-color);
+}
+
+.lueLisaa {
+  color: var(--primary-color);
+  background-color: #ffffff;
+  font-size: 20px;
+  border: solid var(--primary-color) 2px;
+  padding: 10px 150px;
+  border-radius: 2%;
+}
+
+.paperwork1 {
+  width: 1650px;
+  padding: 20px;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.paperwork1 img {
+  margin-right: 70px;
+  float: left;
+}
+
+.paperwork1 h2,
+.paperwork1 p {
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+}
+
+.paperwork1 h2 {
+  padding-bottom: 20px;
+  font-size: 37px;
+  font-weight: 450;
+}
+
+.paperwork1 p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.paperwork1 span {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.paperwork2 {
+  width: 1700px;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.paperwork2 img {
+  margin-right: 70px;
+  padding-left: 20px;
+  float: right;
+}
+
+.paperwork2 h2,
+.paperwork2 p {
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+}
+
+.paperwork2 h2 {
+  padding-bottom: 20px;
+  font-size: 37px;
+  font-weight: 450;
+}
+
+.paperwork2 p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.paperwork2 span {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.somet img {
+  position: relative;
+  left: 800px;
+  cursor: pointer;
+}
+
+#yhteys {
+  display: inline-flex;
+  color: white;
+  position: relative;
+  left: 700px;
+  padding-top: 40px;
+}
+
+#yhteysParagraph {
+  padding-left: 10px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+#copyright {
+  color: white;
+  position: absolute;
+  left: 830px;
+}
+button:hover {
+  background-color: whitesmoke;
 }
 
 footer {
-    background-color: var(--primary-color);
-    height: 480px;
+  background-color: var(--primary-color);
+  height: 480px;
 }
 
 .footerColumn {
-    color: var(--secondary-color);
-    float: left;
-    width: 33.33%;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-    font-size: 20px;
+  color: var(--secondary-color);
+  float: left;
+  width: 33.33%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  font-size: 20px;
 }
 
 /* Clear floats after the columns */
 .footerRow:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
+/* Small screens */
 
-#cards {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    color: var(--primary-color);
-}
+@media all and (max-width: 768px) {
+  /* Hide unnecessary stuff */
+  #indexHeading {
+    display: none;
+  }
 
-.card {
-    text-align: center;
-    border: solid black 1px;
-    border-radius: 2%;   
-}
+  hr {
+    display: none;
+  }
 
-.card h2 {
-    padding-top: 20px;
-    font-size: 30px;
-}
+  .navLi,
+  .lang {
+    display: none;
+  }
 
-hr {
-    border: solid rgb(230, 229, 228) 2px;
-}
+  .dropdown-content p {
+    display: none;
+  }
 
-.ipsum {
-    padding: 100px 120px;
-    color: var(--primary-color);
-}
+  /* Dropdown */
 
-.lueLisaa {
-    color: var(--primary-color);
-    background-color: #ffffff;
-    font-size: 20px;
-    border: solid var(--primary-color) 2px;
-    padding: 10px 150px;
-    border-radius: 2%;
-}
-
-.paperwork1 {
-    width: 1650px;
-    padding: 20px;
-    overflow: hidden;
-    padding-bottom: 100px;
-}
-
-.paperwork1 img {
-    margin-right: 70px;
-    float: left;
-}
-
-.paperwork1 h2,
-.paperwork1 p{
-    margin-left: 15px;
-    display: block;
-    margin: 2px 0 0 0;
-}
-
-.paperwork1 h2 {
-    padding-bottom: 20px;
-    font-size: 37px;
-    font-weight: 450;
-}
-
-.paperwork1 p {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.paperwork1 span {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.paperwork2 {
-    width: 1700px;
-    overflow: hidden;
-    padding-bottom: 100px;
-}
-
-.paperwork2 img {
-    margin-right: 70px;
-    padding-left: 20px;
-    float: right;
-}
-
-.paperwork2 h2,
-.paperwork2 p{
-    margin-left: 15px;
-    display: block;
-    margin: 2px 0 0 0;
-}
-
-.paperwork2 h2 {
-    padding-bottom: 20px;
-    font-size: 37px;
-    font-weight: 450;
-}
-
-.paperwork2 p {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.paperwork2 span {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
-.somet img {
-    position: relative;
-    left: 800px;
-    cursor: pointer;
-}
-
-#yhteys {
-    display: inline-flex;
-    color: white;
-    position: relative;
-    left: 700px;
-    padding-top: 40px;
-}
-
-#yhteysParagraph {
-    padding-left: 10px;
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-#copyright {
-    color: white;
+  .dropdown-content {
+    width: 100%;
     position: absolute;
-    left: 830px;
-}
-button:hover {
-    background-color: whitesmoke;
+    right: -0px;
+    height: 55vh;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  #tietoja,
+  #laatu,
+  #kansainvalisyys,
+  #yhteystiedot,
+  #kieli,
+  #suomi,
+  #svenska,
+  #english {
+    display: block;
+  }
+
+  .column:nth-child(2) {
+    display: none;
+  }
+
+  .column a:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  #yhteystiedot,
+  #kieli,
+  #kirjaudu {
+    margin-left: 0;
+  }
+
+  nav hr {
+    display: block;
+    border: solid var(--secondary-color) 0.5px;
+  }
+  /*  */
+
+  section {
+    width: 768px;
+  }
+
+  /* index */
+
+  #index {
+    height: 40%;
+    width: 100%;
+  }
+
+  #indexContent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 150px;
+  }
+
+  #indexFooter {
+    position: absolute;
+    top: 55px;
+    background: rgba(58, 64, 90, 0.7);
+    height: 40%;
+  }
+
+  #indexFooter h2,
+  #indexFooter p {
+    width: 500px;
+    margin: auto;
+  }
+
+  #indexFooter h2 {
+    font-size: 40px;
+  }
+
+  #indexFooter p {
+    font-weight: 300;
+  }
+
+  /* Cards */
+
+  #cards {
+    display: block;
+    margin-bottom: -300px;
+    width: 768px;
+  }
+
+  .card {
+    width: 456px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  /* Ipsum page */
+
+  .paperwork1,
+  .paperwork2 {
+    width: 650px;
+    overflow: hidden;
+  }
+
+  .paperwork1 img,
+  .paperwork2 img {
+    width: 456px;
+    float: none;
+  }
+
+  .paperwork1 h2,
+  .paperwork2 h2 {
+    overflow: hidden;
+    font-size: 30px;
+    float: none;
+    width: 456px;
+  }
+
+  .paperwork1 p,
+  .paperwork2 p {
+    width: 456px;
+    float: none;
+  }
+
+  .paperwork2 p,
+  .paperwork2 h2,
+  .paperwork2 span {
+    position: relative;
+    left: 20px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 70%;
+  }
+  .footerColumn {
+    flex-direction: column;
+    float: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  .somet {
+    position: relative;
+    right: 500px;
+  }
+
+  #yhteys {
+    position: relative;
+    left: 100;
+    display: block;
+  }
+
+  #yhteysParagraph {
+    position: absolute;
+    left: 150;
+  }
+
+  #copyright {
+    position: relative;
+    left: 200;
+    top: 60;
+  }
 }

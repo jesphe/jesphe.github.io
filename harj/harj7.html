@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kellot soi, vai soiko?</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../css/harj7.css">
 </head>
 
@@ -18,26 +19,36 @@
                 <div class="dropdown-content">
                     <div class="row">
                         <div class="column">
-                            <a href="#">Tutustu ></a>
-                            <a href="#">Varainhankinta ></a>
-                            <a href="#">Töihin ><br><br></a>
-                            <a href="#">Tietosuoja >
+                            <a href="#" id="tietoja">Tietoja <i class="fa fa-angle-right"></i></a>
+                            <a href="#">Tutustu <i class="fa fa-angle-right"></i></a>
+                            <a href="#">Varainhankinta <i class="fa fa-angle-right"></i></a>
+                            <a href="#">Töihin <i class="fa fa-angle-right"></i></a>
+                            <a href="#">Tietosuoja <i class="fa fa-angle-right"></i>   
                                 <br>
                                 <p style="color: white; font-size: 15px;">Tietosuoja on meille tärkeä ja
                                     haluammekin osoittaa, miten ja
                                     minkälaisten tehtävien hoitamiseksi
                                     henkilötietoja käsittelemme.</p>
                             </a>
+                            <a href="#" id="laatu">Laatu <i class="fa fa-angle-right"></i></a>
+                            <a href="#" id="kansainvalisyys">Kansainvälisyys <i class="fa fa-angle-right"></i></a>
+                            <a href="#" id="yhteystiedot">Yhteystiedot</a>
+                            <br><hr><br>
+                            <a href="#" id="kirjaudu">Kirjaudu <i class="fa fa-lock"></i></a>
+                            <a href="#" id="kieli">Kieli</a>
+                            <a href="#" id="suomi">suomi</a>
+                            <a href="#" id="svenska">svenska</a>
+                            <a href="#" id="english">english</a>
                         </div>
                         <div class="column">
-                            <a href="#">Laatu >
+                            <a href="#">Laatu <i class="fa fa-angle-right"></i>
                                 <br>
                                 <p style="color: white; font-size: 15px;">Tervetuloa tutustumaan meidän laatuun. Näillä
                                     sivuilla kerromme, kuinka me vastaamme
                                     toimintansa laadusta eurooppalaisen
                                     korkeakoulutusalueen periaatteiden mukaisesti.</p>
                             </a>
-                            <a href="#">Kansaivälisyys >
+                            <a href="#">Kansainvälisyys <i class="fa fa-angle-right"></i>
                                 <br>
                                 <p style="color: white; font-size: 15px;">
                                     Kansainvälisty kanssamme! Hyödynnä
@@ -60,7 +71,7 @@
     <!-- Etusivun taustakuva -->
     <section id="index">
         <div id="indexContent">
-            <img src="./kuvat/Logo-1.svg" style="width: 350px; cursor: pointer;">
+            <img src="./kuvat/Logo-1.svg">
             <div id="indexHeading">
                 <p>Palvelut</p>
                 <p>Tutkimus ja kehitus</p>
@@ -129,7 +140,7 @@
                     euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                     Etiam fringilla interdum nisl,
                     vitae semper neque facilisis non. Etiam eu erat quis felis pretium vehicula.</p><br>
-                    <span>Lue Lisää -<i class="arrow right"></i></span>
+                    <span>Lue Lisää <i class="fa fa-arrow-right"></i></i></span>
             </div>
         </div>
     
@@ -151,7 +162,7 @@
                 euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 Etiam fringilla interdum nisl,
                 vitae semper neque facilisis non. Etiam eu erat quis felis pretium vehicula.</p><br>
-                <span>Lue Lisää -<i class="arrow right"></i></span>
+                <span>Lue Lisää <i class="fa fa-arrow-right"></i></span>
         </div>
     <hr>
     <div class="paperwork1" style="padding-top: 100px;">
@@ -171,7 +182,7 @@
                 euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 Etiam fringilla interdum nisl,
                 vitae semper neque facilisis non. Etiam eu erat quis felis pretium vehicula.</p><br>
-                <span>Lue Lisää -<i class="arrow right"></i></span>
+                <span>Lue Lisää <i class="fa fa-arrow-right"></i></span>
         </div>
     </div>
 </section>
@@ -201,10 +212,21 @@
             <img src="./kuvat/twitter.png" style="width: 2%;">
             <img src="./kuvat/youtube.png" style="width: 3%; position: relative; top: 10px;">
         </div><br>
-        <span id="yhteys">Simonkatu 12B, 00100 Helsinki | Vaihde puh. 09 1234 5678 |<p id="yhteysParagraph">
-                info@koulutsoivaisoiko.fi</p></span>
+        <span id="yhteys">Simonkatu 12B, 00100 Helsinki | Vaihde puh. 09 1234 5678 |<br><br>
+        <p id="yhteysParagraph">info@koulutsoivaisoiko.fi</p></span>
         <p id="copyright"><br>Copyright © Skill17 Web Development 2019</p>
     </footer>
+    <script>
+        var x = window.matchMedia("(max-width: 768px)");
+        myFunction(x);
+        x.addEventListener(myFunction);
+        function myFunction(x) {
+            if(x.matches) {
+                var menu = document.querySelector("html body nav ul#navLinks div.dropdown button.dropbtn")
+                menu.innerHTML = "Menu" + " " + '<i class="fa fa-caret-down"></i>'
+            }
+        }
+    </script>
 </body>
 
 </html>
