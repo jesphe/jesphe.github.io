@@ -1,22 +1,44 @@
+:root {
+    font-size: 16px;
+    --primary-color: #141414;
+    --secondary-color: #EFF9FA;
+    --tertiary-color: #24292E;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Asap', sans-serif;
 }
 
-body {
-    text-align: center;
-    background-color: lightcyan;
+/* Navigation bar */
+
+header {
+    font-size: 1.3rem;
+    background: var(--tertiary-color);
+
 }
 
-li { 
-    list-style: circle;
-    font-size: 25px;
-    padding: 20px 0;
+header ul {
+    width: 85%;
+    margin: auto;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
 }
 
-a  {
-    color: black;
+header li a {
     text-decoration: none;
-    border-bottom: solid 1px black;
+    color: var(--secondary-color);
+    padding: 0 20px;
+}
+
+/* Section */
+
+section {
+    height: 100vh;
 }
