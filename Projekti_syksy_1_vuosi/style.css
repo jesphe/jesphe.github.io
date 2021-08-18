@@ -1,7 +1,6 @@
 :root {
   font-size: 16px;
   --secondary-color: #00b4d8;
-  --primarybg-color: #caf0f8;
   --secondarybg-color: #90e0ef;
   --highlight-color: #e9fbff;
 }
@@ -29,7 +28,7 @@
 }
 
 body {
-  background-color: var(--primarybg-color);
+  background-color: white;
 }
 
 section {
