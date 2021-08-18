@@ -1,187 +1,202 @@
-/* Fonts */
+/* Font */
 
-/* font-family: 'Inconsolata', monospace; */
-/* font-family: 'Noto Sans SC', sans-serif; */
 /* font-family: 'Varela Round', sans-serif; */
 
 /* Colors */
 
-/* Font color */
-/* #313e50ff; */
+  /* Font color */
+  /* #313e50ff; */
 
-/* Complementary color scheme */
-/* #759834; */
-/* #347598 */
-/* #983475 */
+  /* Complementary color scheme */
+  /* #759834; */
+  /* #347598 */
+  /* #983475 */
 
 /* Global */
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: #313e50ff;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  main {
-    width: 50%;
-    height: 100vh;
-    margin: auto;
-  }
-  
-  section {
-    padding: 100px 0 50px 0;
-    font-family: 'Varela Round', sans-serif;
-  }
-  
-  section h1 {
-    font-size: 2.2rem;
-    padding-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-size: 1.2rem;
-  }
-  
-  input[type='submit'] {
-    margin: 10px 0;
-    padding: 5px;
-    width: 125px;
-  }
-  
-  /* Header/nav */
-  
-  header {
-    height: 10vh;
-    font-family: 'Varela Round', sans-serif;
-    display: flex;
-    align-items: center;
-    background-color: #f5f5f5;
-    box-shadow: 0 5px 30px #cccccc;
-  }
-  
-  nav {
-    width: 75%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav > * {
-    padding: 0 30px;
-    text-decoration: underline 2px;
-    color: #313e50ff;
-    font-weight: 700;
-    font-size: 1.5rem;
-    transition: 0.5s;
-  }
-  
-  .nav_projects:hover {
-    color: #759834;
-  }
-  
-  .nav_about:hover {
-    color: #347598;
-  }
-  
-  .nav_contact:hover {
-    color: #983475;
-  }
-  
-  nav a:hover {
-    transform: scale(1.2);
-  }
-  
-  /* Introduction */
-  
-  #introduction {
-    height: 50vh;
-  }
-  
-  #int-o-container {
-    box-shadow: 0 5px 30px #cccccc;
-    height: 40vh;
-    width: 90%;
-    margin: auto;
-  }
-  
-  /* Projects */
-  
-  .projects h1 {
-    color: #759834;
-  }
-  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #313e50ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0 50px 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+section h1 {
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+}
+
+input[type='submit'] {
+  margin: 10px 0;
+  padding: 5px;
+  width: 125px;
+}
+
+/* Header/nav */
+
+header {
+  height: 10vh;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 5px 30px #cccccc;
+}
+
+nav {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+nav > * {
+  padding: 0 30px;
+  text-decoration: underline 2px;
+  color: #313e50ff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.nav_projects:hover {
+  color: #759834;
+}
+
+.nav_about:hover {
+  color: #347598;
+}
+
+.nav_contact:hover {
+  color: #983475;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+/* Introduction */
+
+#introduction {
+  height: 50vh;
+}
+
+#int-o-container {
+  box-shadow: 0 5px 30px #cccccc;
+  height: 40vh;
+  width: 90%;
+  margin: auto;
+}
+
+/* Projects */
+
+.projects h1 {
+  color: #759834;
+}
+
+.projectCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectContainer {
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px #cccccc;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.projectImage {
+  background-image: url('../images/kellotsoi.jpg');
+  height: 175px;
+  width: 300px;
+}
+
+.projectText {
+  width: 275px;
+  margin: auto;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
+
+.projectText p {
+  padding: 5px 0 5px 0;
+}
+
+/* About */
+
+.about h1 {
+  color: #347598;
+}
+
+.about p {
+  font-size: 1.1em;
+}
+
+/* Contact */
+
+.contact h1 {
+  color: #983475;
+}
+
+.contact p {
+  font-size: 1.1em;
+}
+
+/* Forms */
+
+.formContainer {
+  width: 250px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputGroup {
+  padding: 10px 0;
+}
+
+.inputField {
+  width: 250px;
+  height: 25px;
+}
+
+.inputTextarea {
+  width: 250px;
+  height: 75px;
+  resize: none;
+}
+
+@media all and (max-width: 1919px) {
   .projectCards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
-  
-  .projectContainer {
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 5px 30px #cccccc;
-    overflow: hidden;
-  }
-  
-  .projectImage {
-    background-image: url('../images/kellotsoi.jpg');
-    height: 175px;
-    width: 300px;
-  }
-  
-  .projectText {
-    width: 275px;
-    margin: auto;
-    text-align: center;
-    padding: 5px 0 0 0;
-  }
-  
-  .projectText p {
-    padding: 5px 0 5px 0;
-  }
-  
-  /* About */
-  
-  .about h1 {
-    color: #347598;
-  }
-  
-  /* Contact */
-  
-  .contact h1 {
-    color: #983475;
-  }
-  
-  /* Forms */
-  
-  .formContainer {
-    width: 250px;
-  }
-  
-  #contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .inputGroup {
-    padding: 10px 0;
-  }
-  
-  .inputField {
-    width: 250px;
-    height: 25px;
-  }
-  
-  .inputTextarea {
-    width: 250px;
-    height: 75px;
-    resize: none;
-  }
+}
