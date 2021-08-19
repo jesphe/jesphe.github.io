@@ -131,7 +131,6 @@ nav a:hover {
 }
 
 .projectImage {
-  background-image: url('../images/kellotsoi.jpg');
   height: 175px;
   width: 300px;
 }
@@ -141,6 +140,10 @@ nav a:hover {
   margin: auto;
   text-align: center;
   padding: 5px 0 0 0;
+}
+
+.projectText a {
+  display: inline-block;
 }
 
 .projectText p {
@@ -155,6 +158,7 @@ nav a:hover {
 
 .about p {
   font-size: 20px;
+  padding-bottom: 20px;
 }
 
 /* Contact */
