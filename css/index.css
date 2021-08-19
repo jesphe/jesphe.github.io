@@ -200,6 +200,12 @@ nav a:hover {
   resize: none;
 }
 
+@media screen and (max-width: 1500px) {
+  main {
+    width: 65%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   main {
     width: 80%;
@@ -208,7 +214,7 @@ nav a:hover {
   }
 
   nav > * {
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 5px;
   }
 }
