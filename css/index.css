@@ -153,7 +153,7 @@ nav a:hover {
 }
 
 .about p {
-  font-size: 1.1em;
+  font-size: 20px;
 }
 
 /* Contact */
@@ -162,8 +162,9 @@ nav a:hover {
   color: #983475;
 }
 
-.contact p {
-  font-size: 1.1em;
+.contact p,
+.contact a {
+  font-size: 20px;
 }
 
 /* Forms */
