@@ -217,6 +217,11 @@ nav a:hover {
     margin: auto;
   }
 
+  nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   nav > * {
     font-size: 22px;
     padding-bottom: 5px;
