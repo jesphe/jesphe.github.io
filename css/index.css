@@ -32,7 +32,7 @@ main {
 }
 
 section {
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0 0;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -67,6 +67,7 @@ nav {
   width: 75%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -158,6 +159,10 @@ nav a:hover {
 
 /* Contact */
 
+#contact {
+  padding-bottom: 50px;
+}
+
 .contact h1 {
   color: #983475;
 }
@@ -200,5 +205,10 @@ nav a:hover {
     width: 80%;
     height: 100vh;
     margin: auto;
+  }
+
+  nav > * {
+    font-size: 20px;
+    padding-bottom: 5px;
   }
 }
