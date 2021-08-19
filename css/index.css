@@ -55,12 +55,21 @@ input[type='submit'] {
 /* Header/nav */
 
 header {
-  height: 10vh;
+  height: 95px;
   font-family: 'Varela Round', sans-serif;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all ease 0.3s;
   background-color: #f5f5f5;
   box-shadow: 0 5px 30px #cccccc;
+  z-index: 100;
+}
+
+header.hide {
+  top: -95px;
 }
 
 nav {
@@ -110,6 +119,10 @@ nav a:hover {
 }
 
 /* Projects */
+
+#projects {
+  padding-top: 195px;
+}
 
 .projects h1 {
   color: #759834;

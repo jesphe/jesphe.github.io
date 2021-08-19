@@ -18,9 +18,59 @@
     <meta name="language" content="English" />
     <meta name="author" content="Jesper Helin" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script>
+      window.onload = () => {
+        let doc = document.documentElement;
+        let w = window;
+
+        let prevScroll = w.scrollY || doc.scrollTop;
+        let curScroll;
+        let direction = 0;
+        let prevDirection = 0;
+
+        let header = document.getElementById('header');
+
+        let checkScroll = () => {
+          // Find the direction of scroll
+          // 0 - initial, 1 - up, 2 - down
+
+          curScroll = w.scrollY || doc.scrollTop;
+          if (curScroll > prevScroll) {
+            // scrolled up
+            direction = 2;
+          } 
+          else if (curScroll < prevScroll) {
+            // scrolled down
+            direction = 1;
+          }
+
+          if (direction !== prevDirection) {
+            toggleHeader(direction, curScroll);
+          }
+
+          prevScroll = curScroll;
+        };
+
+        var toggleHeader = (direction, curScroll) => {
+          if (direction === 2 && curScroll > 95) {
+
+            header.classList.add('hide');
+            prevDirection = direction;
+          }
+          else if (direction === 1) {
+            header.classList.remove('hide');
+            prevDirection = direction;
+          }
+        };
+
+        window.addEventListener('scroll', checkScroll);
+
+      };
+
+    </script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
         <a href="#projects" class="nav_projects"> Projects </a>
         <a href="#about" class="nav_about"> About </a>
