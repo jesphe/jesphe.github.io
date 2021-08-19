@@ -217,13 +217,18 @@ nav a:hover {
     margin: auto;
   }
 
+  header {
+    position: relative;
+  }
+
   nav {
+    position: relative;
     width: 90%;
     margin: 0 auto;
   }
 
   nav > * {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 5px;
   }
 }
