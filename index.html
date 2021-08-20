@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+SC&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <meta
       name="description"
       content="My name is Jesper and I'm a Full Stack Developer -student. You can find more about me from this website."
@@ -64,18 +66,32 @@
         };
 
         window.addEventListener('scroll', checkScroll);
-
       };
+        //-----------------------------------------------
+        //  Dark mode toggle
+        //
+        const darkModeToggle = () => {
+          const btn = document.querySelector('.dark-mode-toggle');
+          document.body.classList.toggle('dark-theme');
+          if(document.body.classList.value == 'light-theme dark-theme') {
+            document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'light_mode';
+          } else {
+            document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'dark_mode';
+          }
+        };
 
     </script>
   </head>
-  <body>
+  <body class="light-theme">
     <header id="header">
       <nav>
-        <a href="#projects" class="nav_projects"> Projects </a>
-        <a href="#about" class="nav_about"> About </a>
-        <a href="#contact" class="nav_contact"> Contact Me </a>
+        <a href="#projects" class="nav_projects">Projects</a>
+        <a href="#about" class="nav_about">About</a>
+        <a href="#contact" class="nav_contact">Contact Me</a>
       </nav>
+      <span class="material-icons md-48 dark-mode-toggle" onclick="darkModeToggle()">
+        dark_mode
+        </span>
     </header>
     <main>
       <!-- <section id="introduction">
