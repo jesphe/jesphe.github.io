@@ -64,22 +64,20 @@
             prevDirection = direction;
           }
         };
-
         window.addEventListener('scroll', checkScroll);
       };
-        //-----------------------------------------------
-        //  Dark mode toggle
-        //
-        const darkModeToggle = () => {
-          const btn = document.querySelector('.dark-mode-toggle');
-          document.body.classList.toggle('dark-theme');
-          if(document.body.classList.value == 'light-theme dark-theme') {
-            document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'light_mode';
-          } else {
-            document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'dark_mode';
-          }
-        };
-
+      //-----------------------------------------------
+      //  Dark mode toggle
+      //
+      const darkModeToggle = () => {
+        const btn = document.querySelector('.dark-mode-toggle');
+        document.body.classList.toggle('dark-theme');
+        if(document.body.classList.value == 'light-theme dark-theme') {
+          document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'light_mode';
+        } else {
+          document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'dark_mode';
+        }
+      };
     </script>
   </head>
   <body class="light-theme">
