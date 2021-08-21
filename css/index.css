@@ -4,20 +4,20 @@
 
 /* Colors */
 
-  /* Font color */
-  /* #313e50ff; */
+/* Font color */
+/* #313e50ff; */
 
-  /* Complementary color scheme */
-  /* #759834; */
-  /* #347598 */
-  /* #983475 */
+/* Complementary color scheme */
+/* #759834; */
+/* #347598 */
+/* #983475 */
 
 /* Material icons */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -47,13 +47,17 @@
   font-feature-settings: 'liga';
 }
 
+.dark-mode-toggle:hover {
+  color: #778dac !important;
+}
+
 .material-icons.md-48 {
-  font-size: 48px; 
+  font-size: 48px;
 }
 
 .dark-theme .material-icons {
   transition: all ease-in-out 0.5s;
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 /* Global */
@@ -137,22 +141,6 @@ nav > * {
   transition: all ease-in-out 0.5s;
 }
 
-.nav_projects:hover {
-  color: #759834;
-}
-
-.nav_about:hover {
-  color: #347598;
-}
-
-.nav_contact:hover {
-  color: #983475;
-}
-
-nav a:hover {
-  transform: scale(1.2);
-}
-
 /* Introduction */
 /* 
 #introduction {
@@ -192,21 +180,21 @@ nav a:hover {
 
 .projectContainer {
   transition: all ease-in-out 0.5s;
-  height: 400px;
-  width: 300px;
+  min-height: 400px;
+  max-width: 300px;
   border-radius: 20px;
   box-shadow: 0 5px 30px #cccccc;
   overflow: hidden;
   margin-bottom: 20px;
 }
 
-.projectImage {
-  height: 175px;
-  width: 300px;
+.projectImage img {
+  height: auto;
+  max-width: 100%;
 }
 
 .projectText {
-  width: 275px;
+  max-width: 300px;
   margin: auto;
   text-align: center;
   padding: 5px 0 0 0;
@@ -221,7 +209,7 @@ nav a:hover {
 }
 
 .projectText p {
-  padding: 5px 0 5px 0;
+  padding: 5px 0.5em;
 }
 
 /* About */
@@ -295,7 +283,7 @@ body.dark-theme header {
 }
 
 .dark-theme nav > * {
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .dark-theme .nav_projects:hover {
@@ -319,15 +307,15 @@ body.dark-theme header {
 }
 
 .dark-theme .projectText * {
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
-.dark-theme .about h1 { 
+.dark-theme .about h1 {
   color: #4297c5;
 }
 
 .dark-theme .about p {
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .dark-theme .contact h1 {
@@ -335,7 +323,7 @@ body.dark-theme header {
 }
 
 .dark-theme .contact * {
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .dark-theme img {
@@ -344,6 +332,24 @@ body.dark-theme header {
 }
 
 /* Media queries */
+
+@media screen and (min-width: 70em) {
+  .nav_projects:hover {
+    color: #759834;
+  }
+
+  .nav_about:hover {
+    color: #347598;
+  }
+
+  .nav_contact:hover {
+    color: #983475;
+  }
+
+  nav a:hover {
+    transform: scale(1.2);
+  }
+}
 
 @media screen and (max-width: 1500px) {
   main {
