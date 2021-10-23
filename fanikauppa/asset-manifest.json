@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fanikauppa/static/css/main.7ad66655.chunk.css",
+    "main.js": "/fanikauppa/static/js/main.9d16f39a.chunk.js",
+    "main.js.map": "/fanikauppa/static/js/main.9d16f39a.chunk.js.map",
+    "runtime-main.js": "/fanikauppa/static/js/runtime-main.b638fd46.js",
+    "runtime-main.js.map": "/fanikauppa/static/js/runtime-main.b638fd46.js.map",
+    "static/js/2.58955b0b.chunk.js": "/fanikauppa/static/js/2.58955b0b.chunk.js",
+    "static/js/2.58955b0b.chunk.js.map": "/fanikauppa/static/js/2.58955b0b.chunk.js.map",
+    "static/js/3.fbf307c4.chunk.js": "/fanikauppa/static/js/3.fbf307c4.chunk.js",
+    "static/js/3.fbf307c4.chunk.js.map": "/fanikauppa/static/js/3.fbf307c4.chunk.js.map",
+    "index.html": "/fanikauppa/index.html",
+    "static/css/main.7ad66655.chunk.css.map": "/fanikauppa/static/css/main.7ad66655.chunk.css.map",
+    "static/js/2.58955b0b.chunk.js.LICENSE.txt": "/fanikauppa/static/js/2.58955b0b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/fanikauppa/static/media/Poppins-Regular.8081832f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b638fd46.js",
+    "static/js/2.58955b0b.chunk.js",
+    "static/css/main.7ad66655.chunk.css",
+    "static/js/main.9d16f39a.chunk.js"
+  ]
+}
