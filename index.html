@@ -1,98 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jesper Helin | Home</title>
-    <script src="./scripts/script.js"></script>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+SC&family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <meta
-      name="description"
-      content="My name is Jesper and I'm a Full Stack Developer -student. You can find more about me from this website."
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
-    <meta name="author" content="Jesper Helin" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <script>
-      window.onload = () => {
-        let doc = document.documentElement;
-        let w = window;
 
-        let prevScroll = w.scrollY || doc.scrollTop;
-        let curScroll;
-        let direction = 0;
-        let prevDirection = 0;
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesper Helin | Home</title>
+  <script src="./scripts/script.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+SC&family=Varela+Round&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="description"
+    content="My name is Jesper and I'm a Full Stack Developer -student. You can find more about me from this website." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
+  <meta name="author" content="Jesper Helin" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script>
+    window.onload = () => {
+      let doc = document.documentElement;
+      let w = window;
 
-        let header = document.getElementById('header');
+      let prevScroll = w.scrollY || doc.scrollTop;
+      let curScroll;
+      let direction = 0;
+      let prevDirection = 0;
 
-        let checkScroll = () => {
-          // Find the direction of scroll
-          // 0 - initial, 1 - up, 2 - down
+      let header = document.getElementById('header');
 
-          curScroll = w.scrollY || doc.scrollTop;
-          if (curScroll > prevScroll) {
-            // scrolled up
-            direction = 2;
-          } 
-          else if (curScroll < prevScroll) {
-            // scrolled down
-            direction = 1;
-          }
+      let checkScroll = () => {
+        // Find the direction of scroll
+        // 0 - initial, 1 - up, 2 - down
 
-          if (direction !== prevDirection) {
-            toggleHeader(direction, curScroll);
-          }
+        curScroll = w.scrollY || doc.scrollTop;
+        if (curScroll > prevScroll) {
+          // scrolled up
+          direction = 2;
+        }
+        else if (curScroll < prevScroll) {
+          // scrolled down
+          direction = 1;
+        }
 
-          prevScroll = curScroll;
-        };
+        if (direction !== prevDirection) {
+          toggleHeader(direction, curScroll);
+        }
 
-        var toggleHeader = (direction, curScroll) => {
-          if (direction === 2 && curScroll > 95) {
-
-            header.classList.add('hide');
-            prevDirection = direction;
-          }
-          else if (direction === 1) {
-            header.classList.remove('hide');
-            prevDirection = direction;
-          }
-        };
-        window.addEventListener('scroll', checkScroll);
+        prevScroll = curScroll;
       };
-      //-----------------------------------------------
-      //  Dark mode toggle
-      //
-      const darkModeToggle = () => {
-        const btn = document.querySelector('.dark-mode-toggle');
-        document.body.classList.toggle('dark-theme');
-        if(document.body.classList.value == 'light-theme dark-theme') {
-          document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'light_mode';
-        } else {
-          document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'dark_mode';
+
+      var toggleHeader = (direction, curScroll) => {
+        if (direction === 2 && curScroll > 95) {
+
+          header.classList.add('hide');
+          prevDirection = direction;
+        }
+        else if (direction === 1) {
+          header.classList.remove('hide');
+          prevDirection = direction;
         }
       };
-    </script>
-  </head>
-  <body class="light-theme">
-    <header id="header">
-      <nav>
-        <a href="#projects" class="nav_projects">Projects</a>
-        <a href="#about" class="nav_about">About</a>
-        <a href="#contact" class="nav_contact">Contact Me</a>
-      </nav>
-      <span class="material-icons md-48 dark-mode-toggle" onclick="darkModeToggle()">
-        dark_mode
-        </span>
-    </header>
-    <main>
-      <!-- <section id="introduction">
+      window.addEventListener('scroll', checkScroll);
+    };
+    //-----------------------------------------------
+    //  Dark mode toggle
+    //
+    const darkModeToggle = () => {
+      const btn = document.querySelector('.dark-mode-toggle');
+      document.body.classList.toggle('dark-theme');
+      if (document.body.classList.value == 'light-theme dark-theme') {
+        document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'light_mode';
+      } else {
+        document.getElementsByClassName('dark-mode-toggle')[0].innerHTML = 'dark_mode';
+      }
+    };
+  </script>
+</head>
+
+<body class="light-theme">
+  <header id="header">
+    <nav>
+      <a href="#projects" class="nav_projects">Projects</a>
+      <a href="#about" class="nav_about">About</a>
+      <a href="#contact" class="nav_contact">Contact Me</a>
+    </nav>
+    <span class="material-icons md-48 dark-mode-toggle" onclick="darkModeToggle()">
+      dark_mode
+    </span>
+  </header>
+  <main>
+    <!-- <section id="introduction">
         <div id="int-o-container">
           <div id="int-image"></div>
           <div id="int-header">
@@ -100,137 +97,126 @@
           </div>
         </div>
       </section> -->
-      <section id="projects" class="projects">
-        <h1>Projects</h1>
-        <div class="projectCards">
-          <div class="projectContainer">
-            <div class="projectImage">
-              <img src="./images/kellotsoi.jpg" alt="kellotsoi">
-            </div>
-            <div class="projectText">
-              <h3>Kellot soi, vai soiko?</h3>
-              <p>
-                One of the first major solo projects where we were given the
-                look of a page that we had to recreate. This was the first
-                project where we had to use HTML5, CSS and JavaScript in
-                conjunction.
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/harj/harj7.html"
-                >
-                  <strong>here</strong>
-                </a>
-                and the given resources
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1hUcKc_zUoDjPRpKGDk5aC5pyu7Dn4MhC/view?usp=sharing"
-                >
-                  <strong>here</strong>
-                </a>.
-              </p>
-            </div>
+    <section id="projects" class="projects">
+      <h1>Projects</h1>
+      <div class="projectCards">
+        <div class="projectContainer">
+          <div class="projectImage">
+            <img src="./images/kellotsoi.jpg" alt="kellotsoi">
           </div>
-          <div class="projectContainer">
-            <div class="projectImage">
-              <img src="./images/githubio.png" alt="githubio">
-            </div>
-            <div class="projectText">
-              <h3>jesphe.github.io</h3>
-              <p>
-                This site you're currently looking at is created with only HTML and CSS. I went with a minimalistic look for clarity and overall readability.
-              </p>
-              <p>
-                You can find the HTML
-                <a
-                  target="_blank"
-                  href="https://github.com/jesphe/jesphe.github.io/blob/master/index.html"
-                >
-                  <strong>here</strong>
-                </a>
-                and the CSS
-                <a
-                  target="_blank"
-                  href="https://github.com/jesphe/jesphe.github.io/blob/master/css/index.css"  
-                >
-                  <strong>here</strong>
-                </a>.
-              </p>
-            </div>
-          </div>
-          <div class="projectContainer">
-            <div class="projectImage">
-              <img src="./images/packraft.jpg" alt="kellotsoi">
-            </div>
-            <div class="projectText">
-              <h3>Wild Packrafting</h3>
-              <p>
-                For this project we were given images, description of the site and page's content. What was left to do was to design the site and make it pleasing to look at. This was done in the first half of my first year of studying.
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/Projekti_syksy_1_vuosi/"
-                >
-                  <strong>here</strong>
-                </a>.
-              </p>
-            </div>
-          </div>          
-          <div class="projectContainer">
-            <div class="projectImage">
-              <img src="" alt="fanikauppa">
-            </div>
-            <div class="projectText">
-              <h3>Fanikauppa (react)</h3>
-              <p>
-                Fanikauppa
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/fanikauppa/index.html"
-                >
-                  <strong>here</strong>
-                </a>.
-              </p>
-            </div>
-          <div class="projectContainer">
-            <div class="projectImage">
-              <img src="" alt="fanikauppa">
-            </div>
-            <div class="projectText">
-              <h3>Lan sivu (cpanel)</h3>
-              <p>
-                Lansivusto
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://lan.jeshel20.treok.io/"
-                >
-                  <strong>here</strong>
-                </a>.
-              </p>
-            </div>
+          <div class="projectText">
+            <h3>Kellot soi, vai soiko?</h3>
+            <p>
+              One of the first major solo projects where we were given the
+              look of a page that we had to recreate. This was the first
+              project where we had to use HTML5, CSS and JavaScript in
+              conjunction.
+            </p>
+            <p>
+              Find the product
+              <a target="_blank" href="https://jesphe.github.io/harj/harj7.html">
+                <strong>here</strong>
+              </a>
+              and the given resources
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1hUcKc_zUoDjPRpKGDk5aC5pyu7Dn4MhC/view?usp=sharing">
+                <strong>here</strong>
+              </a>.
+            </p>
           </div>
         </div>
-      </section>
-      <section id="about" class="about">
-        <h1>About</h1>
-        <p>Hello, and welcome to my page! I'm Jesper Helin, an aspiring Full Stack developer -student currently studying my second year in Tampere. I'm highly motivated to learn all about different kinds of technologies and usually I find myself searching for the best solution for the problem at hand. That is also a bit of a problem, as it is rather difficult to learn anything thoroughly due to me changing what I use so frequently</p>
-        <p>I've created applications that have both front- and back-ends in groups as well as alone.</p>
-      </section>
-      <section id="contact" class="contact">
-        <h1>Contact Me</h1>
-        <p>You can get in touch with me through:</p><br />
-          <div style="margin-bottom: 5px;"><a href="mailto:jesper.helin@edu.tampere.fi">jesper.helin@edu.tampere.fi</a></div>
-      </section>
-    </main>
-  </body>
+        <div class="projectContainer">
+          <div class="projectImage">
+            <img src="./images/githubio.png" alt="githubio">
+          </div>
+          <div class="projectText">
+            <h3>jesphe.github.io</h3>
+            <p>
+              This site you're currently looking at is created with only HTML and CSS. I went with a minimalistic look
+              for clarity and overall readability.
+            </p>
+            <p>
+              You can find the HTML
+              <a target="_blank" href="https://github.com/jesphe/jesphe.github.io/blob/master/index.html">
+                <strong>here</strong>
+              </a>
+              and the CSS
+              <a target="_blank" href="https://github.com/jesphe/jesphe.github.io/blob/master/css/index.css">
+                <strong>here</strong>
+              </a>.
+            </p>
+          </div>
+        </div>
+        <div class="projectContainer">
+          <div class="projectImage">
+            <img src="./images/packraft.jpg" alt="kellotsoi">
+          </div>
+          <div class="projectText">
+            <h3>Wild Packrafting</h3>
+            <p>
+              For this project we were given images, description of the site and page's content. What was left to do was
+              to design the site and make it pleasing to look at. This was done in the first half of my first year of
+              studying.
+            </p>
+            <p>
+              Find the product
+              <a target="_blank" href="https://jesphe.github.io/Projekti_syksy_1_vuosi/">
+                <strong>here</strong>
+              </a>.
+            </p>
+          </div>
+        </div>
+        <div class="projectContainer">
+          <div class="projectImage">
+            <img src="" alt="fanikauppa">
+          </div>
+          <div class="projectText">
+            <h3>Fanikauppa (react)</h3>
+            <p>
+              Fanikauppa
+            </p>
+            <p>
+              Find the product
+              <a target="_blank" href="https://jesphe.github.io/fanikauppa/index.html">
+                <strong>here</strong>
+              </a>.
+            </p>
+          </div>
+        </div>
+        <div class="projectContainer">
+          <div class="projectImage">
+            <img src="" alt="fanikauppa">
+          </div>
+          <div class="projectText">
+            <h3>Lan sivu (cpanel)</h3>
+            <p>
+              Lansivusto
+            </p>
+            <p>
+              Find the product
+              <a target="_blank" href="https://lan.jeshel20.treok.io/">
+                <strong>here</strong>
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h1>About</h1>
+      <p>Hello, and welcome to my page! I'm Jesper Helin, an aspiring Full Stack developer -student currently studying
+        my second year in Tampere. I'm highly motivated to learn all about different kinds of technologies and usually I
+        find myself searching for the best solution for the problem at hand. That is also a bit of a problem, as it is
+        rather difficult to learn anything thoroughly due to me changing what I use so frequently</p>
+      <p>I've created applications that have both front- and back-ends in groups as well as alone.</p>
+    </section>
+    <section id="contact" class="contact">
+      <h1>Contact Me</h1>
+      <p>You can get in touch with me through:</p><br />
+      <div style="margin-bottom: 5px;"><a href="mailto:jesper.helin@edu.tampere.fi">jesper.helin@edu.tampere.fi</a>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
