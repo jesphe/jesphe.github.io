@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Stars in Graz | 30.10.2021</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body onresize="checkOverflow()">
+      <div class="landing-page">
+         <nav>
+            <button class="hamburger" onclick="toggleNav()">
+               <img
+                  src="./mediafiles/icons/material-design-icons/navigation/ic_menu_48px.svg"
+                  alt="hamburger"
+                  id="hamburger"
+               />
+            </button>
+            <ul class="navigation-list">
+               <li>
+                  <a href="#schedule-section" onclick="toggleNav()">Schedule</a>
+               </li>
+               <li>
+                  <a href="#tickets-section" onclick="toggleNav()"
+                     >Buy tickets</a
+                  >
+               </li>
+               <li>
+                  <a href="#testimonial-section" onclick="toggleNav()"
+                     >Testimonials</a
+                  >
+               </li>
+               <li><a href="#faq-section" onclick="toggleNav()">FAQs</a></li>
+            </ul>
+         </nav>
+         <video autoplay muted loop class="landing-video">
+            <source
+               src="./mediafiles/videos/Indie_Band_Plays_Music_on_Stage.mp4"
+            />
+         </video>
+         <div class="landing-text-container">
+            <h1>Stars in Graz</h1>
+            <h3>30.10.2021</h3>
+            <address>Messe Congress Graz</address>
+            <h4>
+               Full website will be available: <br />
+               25.09.2021
+            </h4>
+         </div>
+         <pre class="scroll-down-text">Scroll down to read more</pre>
+         <img
+            src="./mediafiles/icons/material-design-icons/navigation/ic_more_horiz_48px.svg"
+            alt="scroll-down"
+            class="landing-scroll-down"
+         />
+         <!-- src="./mediafiles/icons/material-design-icons/navigation/ic_expand_more_48px.svg" -->
+      </div>
+
+      <main>
+         <section id="schedule-section">
+            <h2>Schedule</h2>
+            <table class="schedule-table">
+               <thead>
+                  <tr>
+                     <th>Time</th>
+                     <th>Performer</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>17:00</td>
+                     <td>Bilderbuch</td>
+                  </tr>
+                  <tr>
+                     <td>18:00</td>
+                     <td>Wanda</td>
+                  </tr>
+                  <tr>
+                     <td>19:00</td>
+                     <td>Christina Stürmer</td>
+                  </tr>
+                  <tr>
+                     <td>20:00</td>
+                     <td>Volbeat</td>
+                  </tr>
+                  <tr>
+                     <td>21:00</td>
+                     <td>Imagine Dragons</td>
+                  </tr>
+                  <tr>
+                     <td>22:00</td>
+                     <td>Opus</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="performer-images">
+               <div>
+                  <img
+                     alt="Bilderbuch"
+                     src="./mediafiles/images/artists/bilderbuch.jpg"
+                  />
+                  <pre>Bilderbuch</pre>
+               </div>
+               <div>
+                  <img
+                     alt="Wanda"
+                     src="./mediafiles/images/artists/wanda2.webp"
+                  />
+                  <pre>Wanda</pre>
+               </div>
+               <div>
+                  <img
+                     alt="Christina Sturmer"
+                     src="./mediafiles/images/artists/christina-sturmer3.jpg"
+                  />
+                  <pre>Christina Stürmer</pre>
+               </div>
+               <div>
+                  <img
+                     alt="Volbeat"
+                     src="./mediafiles/images/artists/volbeat2.jpg"
+                  />
+                  <pre>Volbeat</pre>
+               </div>
+               <div>
+                  <img
+                     alt="Imagine Dragons"
+                     src="./mediafiles/images/artists/imagine-dragons2.jpg"
+                  />
+                  <pre>Imagine Dragons</pre>
+               </div>
+               <div>
+                  <img alt="Opus" src="./mediafiles/images/artists/opus.jpg" />
+                  <pre>Opus</pre>
+               </div>
+            </div>
+         </section>
+         <section id="tickets-section">
+            <div class="tickets-container">
+               <h2>Purchase tickets</h2>
+               <p>
+                  Messe Congrez Graz is the largest multi-functional event hall
+                  in Graz. Even before Stars in Graz, the location featured many
+                  international bands and musicians. Be a part of it and
+                  experience the unique atmosphere during a very special
+                  evening.
+               </p>
+               <button
+                  type="button"
+                  onclick="window.open('https://www.google.com/', '_blank')"
+                  class="purchase-tickets-button"
+               >
+                  Purchase tickets
+               </button>
+            </div>
+            <div></div>
+         </section>
+         <section id="testimonial-section">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+               <p>
+                  I can’t overstate how much fun Stars in Graz was. Friends,
+                  great music, scenery, late night party. Wow! So glad to be
+                  there!<br />
+                  - Christian Baumgartner
+               </p>
+
+               <p>
+                  Time stood still at last night's concert... Thanks so much! We
+                  had a fab time! <br />
+                  - Mark Lipman
+               </p>
+
+               <p>
+                  Wow! Such a delightful fun evening last Saturday. The bands
+                  were excellent and the programme perfect! We’ll look forward
+                  to the next one. <br />
+                  - David Reaney
+               </p>
+
+               <p>
+                  It’s a great music concert with a really nice crowd! Brilliant
+                  atmosphere and lots of happy faces, well done on a great
+                  event!
+                  <br />
+                  - Leonie Handl
+               </p>
+            </div>
+         </section>
+         <section id="faq-section">
+            <h2>Frequently asked questions</h2>
+            <details>
+               <summary>
+                  What is Stars in Graz?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  Stars in Graz is a one-day music concert where many different
+                  artists perform their most popular songs. <br />
+                  It takes place once a year since 2015.
+               </p>
+            </details>
+            <details>
+               <summary>
+                  When does Stars in Graz take place?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  On 30.10.2021.<br />
+                  The first act starts at 17:00.
+               </p>
+            </details>
+            <details>
+               <summary>
+                  What is the age minimum?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  Persons under 16 years of age are not allowed to enter without
+                  the accompaniment of an adult.
+               </p>
+            </details>
+            <details>
+               <summary>
+                  Can I pay by credit card?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>Yes, credit cards can be used at all food stands.</p>
+            </details>
+            <details>
+               <summary>
+                  What is the golden circle?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  In the Golden Circle, you experience your favorite act as
+                  close as possible.<br />
+                  It is located directly in front of the stage.<br />
+                  Show your Golden Circle ticket and you'll get to this area
+                  quickly and easily thanks to a separate entrance.
+               </p>
+            </details>
+            <details>
+               <summary>
+                  Are there wheelchair spaces?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  Of course, wheelchair spaces are available.<br />
+                  However, spaces are limited. Please contact us in advance for
+                  more information.
+               </p>
+            </details>
+            <details>
+               <summary>
+                  Can I resale my ticket if I cannot go?
+                  <span class="summary-icon-container"></span>
+               </summary>
+               <p>
+                  The resale of the tickets is prohibited.<br />
+                  For security reasons, we also strongly advise against buying
+                  the tickets from anyone.<br />
+                  Anyone who tries to gain access to the event with copied or
+                  forged tickets will be suspected of ticket misuse and
+                  prosecuted.
+               </p>
+            </details>
+         </section>
+      </main>
+      <script>
+         const checkOverflow = () => {
+            const body = document.querySelector('body');
+            const navigationList = document.querySelector('.navigation-list');
+            const hamburgerIcon = document.querySelector('#hamburger');
+
+            if (window.innerWidth >= 520) {
+               body.style.overflow = 'auto';
+               navigationList.className = 'navigation-list';
+               hamburgerIcon.src =
+                  './mediafiles/icons/material-design-icons/navigation/ic_menu_48px.svg';
+            }
+         };
+
+         const toggleNav = () => {
+            if (window.innerWidth >= 520) {
+               return;
+            }
+            const navigationList = document.querySelector('.navigation-list');
+            const hamburgerIcon = document.querySelector('#hamburger');
+            const body = document.querySelector('body');
+
+            if (navigationList.className === 'navigation-list') {
+               navigationList.className += ' expanded';
+               hamburgerIcon.src =
+                  './mediafiles/icons/material-design-icons/navigation/ic_close_48px.svg';
+               body.style.overflow = 'hidden';
+            } else {
+               navigationList.className = 'navigation-list';
+               hamburgerIcon.src =
+                  './mediafiles/icons/material-design-icons/navigation/ic_menu_48px.svg';
+               body.style.overflow = 'auto';
+            }
+         };
+      </script>
+   </body>
+</html>
